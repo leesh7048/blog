@@ -2,15 +2,20 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4 w-full max-w-screen-lg mx-auto">
+    <header className="flex justify-between items-center py-4 text-white border-b border-white/[0.1]">
       <Link href="/">
         <h1 className="text-3xl font-bold">S-Blog</h1>
       </Link>
       <nav className="flex gap-4">
-        <Link href="/">Home</Link>
-        <Link href="/posts">Posts</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/about">About</Link>
+        <Link className="hover:text-[#0085FF]" href="/">
+          Home
+        </Link>
+        <Link className="hover:text-[#0085FF]" href="/posts">
+          Posts
+        </Link>
+        <Link className="hover:text-[#0085FF]" href="/projects">
+          Projects
+        </Link>
       </nav>
     </header>
   );
