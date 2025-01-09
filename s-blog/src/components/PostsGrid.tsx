@@ -1,5 +1,5 @@
 import { Post } from "@/service/posts";
-import PostCard from "./PostCard";
+import PostCard from "./PostGridCard";
 
 export default function PostsGrid({ posts }: { posts: Post[] }) {
   return (
