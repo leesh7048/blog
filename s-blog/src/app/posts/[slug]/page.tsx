@@ -1,4 +1,5 @@
 import MarkdownViewer from "@/components/MarkdownViewer";
+import PostNavigation from "@/components/PostNavigation";
 import { getPostData } from "@/service/posts";
 import Image from "next/image";
 
@@ -26,6 +27,10 @@ export default async function PostPage({ params }: ParamsProps) {
         />
       </div>
       <MarkdownViewer content={post.content} />
+      <section className="flex shadow-md">
+        {post.prev && <PostNavigation post={post.prev} type="prev" />}
+        {post.next && <PostNavigation post={post.next} type="next" />}
+      </section>
     </article>
   );
 }
