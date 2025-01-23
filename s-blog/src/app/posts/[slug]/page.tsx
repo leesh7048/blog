@@ -17,13 +17,14 @@ export default async function PostPage({ params }: ParamsProps) {
     <article>
       <h1 className="text-4xl font-bold text-white mb-2">{post.title}</h1>
       <p className="text-white/[0.5] mb-10">{post.date}</p>
-      <div className="w-full h-[600px] px-28 py-20 border-b-[1px] border-white/[0.1]">
+      <div className="w-full h-[300px] sm:h-[400px] md:h-[600px] px-4 sm:px-16 md:px-28 py-8 sm:py-12 md:py-20 border-b-[1px] border-white/[0.1]">
         <Image
-          className="w-full h-full"
+          className="w-full h-full object-contain"
           src={`/images/posts/${post.path}.png`}
           alt={post.title}
           width={800}
           height={600}
+          priority
         />
       </div>
       <MarkdownViewer content={post.content} />
