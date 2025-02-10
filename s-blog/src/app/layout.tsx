@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-[#1A202C]">
-      <body className="flex flex-col w-full max-w-screen-lg mx-auto">
+      <body className="flex flex-col w-full max-w-screen-lg mx-auto px-4">
         <Header />
         <main className="grow pt-12">{children}</main>
         <Footer />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   return (
@@ -6,7 +7,7 @@ export default function Header() {
       <Link href="/">
         <h1 className="text-3xl font-bold">S-Blog</h1>
       </Link>
-      <nav className="flex gap-4">
+      <nav className="hidden sm:flex gap-4">
         <Link className="hover:text-[#0085FF]" href="/">
           Home
         </Link>
@@ -17,6 +18,7 @@ export default function Header() {
           Projects
         </Link>
       </nav>
+      <MobileMenu />
     </header>
   );
 }
