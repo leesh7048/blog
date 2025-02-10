@@ -3,15 +3,15 @@ import PostNavigation from "@/components/PostNavigation";
 import { getPostData } from "@/service/posts";
 import Image from "next/image";
 
-interface ParamsProps {
-  params: {
+type Props = {
+  params: Promise<{
     slug: string;
-  };
-}
+  }>;
+};
 
-export default async function PostPage({ params }: ParamsProps) {
-  const { slug } = await Promise.resolve(params);
-  const post = await getPostData(slug);
+export default async function PostPage(props: Props) {
+  const params = await props.params;
+  const post = await getPostData(params.slug);
 
   return (
     <article>
