@@ -10,11 +10,11 @@ export default function Categories({
   selected,
 }: CategoriesProps) {
   return (
-    <section className="text-center p-2 sm:p-4">
-      <h2 className="text-base sm:text-lg font-bold border-b text-white border-white mb-1 sm:mb-2">
+    <section className="text-center p-4">
+      <h2 className="text-lg font-bold border-b text-white border-white mb-2">
         Category
       </h2>
-      <ul className="text-sm sm:text-base ">
+      <ul>
         {categories.map((category) => (
           <li
             className={`cursor-pointer text-white hover:text-[#FBBF24] ${

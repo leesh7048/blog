@@ -19,20 +19,56 @@
   },
   {
     "id": 3,
-    "title": "자바스크립트 면접질문",
-    "content": "자바스크립트 면접질문 정리",
+    "title": "Post 3",
+    "content": "This is the content of post 3",
     "date": "2024-01-01",
     "category": "interview",
-    "path": "javascript-interview",
+    "path": "interview",
     "mainPost": true
   },
   {
     "id": 4,
-    "title": "리액트 면접질문",
-    "content": "리액트 면접질문 정리",
+    "title": "Post 4",
+    "content": "This is the content of post 3",
     "date": "2024-01-01",
     "category": "interview",
-    "path": "react-interview",
+    "path": "interview",
+    "mainPost": false
+  },
+  {
+    "id": 5,
+    "title": "Post 5",
+    "content": "This is the content of post 3",
+    "date": "2024-01-01",
+    "category": "interview",
+    "path": "interview",
+    "mainPost": false
+  },
+  {
+    "id": 6,
+    "title": "Post 5",
+    "content": "This is the content of post 3",
+    "date": "2024-01-01",
+    "category": "interview",
+    "path": "interview",
+    "mainPost": false
+  },
+  {
+    "id": 7,
+    "title": "Post 5",
+    "content": "This is the content of post 3",
+    "date": "2024-01-01",
+    "category": "interview",
+    "path": "interview",
+    "mainPost": false
+  },
+  {
+    "id": 8,
+    "title": "Post 5",
+    "content": "This is the content of post 3",
+    "date": "2024-01-01",
+    "category": "interview",
+    "path": "interview",
     "mainPost": false
   }
 ]
